@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<script>
+	function buttonAdd()
+	{
+		alert("click ok to get the output")
+		var a=document.getElementsByTagName("input")[0].value;
+		var i;
+		var str=" ";
+		for(i=0;i<=parseInt(a);i++)
+		{
+		
+			str=str+"<input type='button'value='"+i+"'+><br><br>";
+			document.getElementById("1").innerHTML=str;
+		}
+	}
+	</script>
+	</head>
+	<body>
+	Enter total no of button:<input type="text" >
+	<input type="button"value="click me" onclick="buttonAdd()">
+	<div id ="1"></div>
+	</body>
+</html>
+	
